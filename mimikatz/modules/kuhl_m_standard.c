@@ -7,17 +7,17 @@
 
 const KUHL_M_C kuhl_m_c_standard[] = {
 	//{kuhl_m_standard_test,		L"test",	L"Test routine (you don\'t want to see this !)"},
-	{kuhl_m_standard_exit,		L"exit",		L"Quit mimikatz"},
-	{kuhl_m_standard_cls,		L"cls",			L"Clear screen (doesn\'t work with redirections, like PsExec)"},
+	{kuhl_m_standard_exit,		L"exit",		L"Quit"},
+	{kuhl_m_standard_cls,		L"cls",			L"Clear "},
 	{kuhl_m_standard_answer,	L"answer",		L"Answer to the Ultimate Question of Life, the Universe, and Everything"},
 	{kuhl_m_standard_coffee,	L"coffee",		L"Please, make me a coffee!"},
-	{kuhl_m_standard_sleep,		L"sleep",		L"Sleep an amount of milliseconds"},
-	{kuhl_m_standard_log,		L"log",			L"Log mimikatz input/output to file"},
-	{kuhl_m_standard_base64,	L"base64",		L"Switch file input/output base64"},
-	{kuhl_m_standard_version,	L"version",		L"Display some version informations"},
-	{kuhl_m_standard_cd,		L"cd",			L"Change or display current directory"},
-	{kuhl_m_standard_localtime,	L"localtime",	L"Displays system local date and time (OJ command)"},
-	{kuhl_m_standard_hostname,	L"hostname",	L"Displays system local hostname"},
+	{kuhl_m_standard_sleep,		L"sleep",		L"Sliip"},
+	{kuhl_m_standard_log,		L"log",			L"Log "},
+	{kuhl_m_standard_base64,	L"base64",		L"Switch input/output"},
+	{kuhl_m_standard_version,	L"version",		L"info"},
+	{kuhl_m_standard_cd,		L"cd",			L"cd"},
+	{kuhl_m_standard_localtime,	L"localtime",	L"date and time"},
+	{kuhl_m_standard_hostname,	L"hostname",	L"hostname"},
 };
 const KUHL_M kuhl_m_standard = {
 	L"standard",	L"Standard module",	L"Basic commands (does not require module name)",
@@ -89,7 +89,7 @@ NTSTATUS kuhl_m_standard_base64(int argc, wchar_t * argv[])
 }
 
 const wchar_t *version_libs[] = {
-	L"lsasrv.dll", L"msv1_0.dll", L"tspkg.dll", L"wdigest.dll", L"kerberos.dll", L"livessp.dll", L"dpapisrv.dll",
+	L"lsasrv.dll", L"msv1_0.dll", L"tspkg.dll", L"wdigest", L"kerberos.dll", L"livessp.dll", L"dpapisrv.dll",
 	L"kdcsvc.dll", L"cryptdll.dll", L"lsadb.dll", L"samsrv.dll", L"rsaenh.dll", L"ncrypt.dll", L"ncryptprov.dll",
 	L"eventlog.dll", L"wevtsvc.dll", L"termsrv.dll",
 };
